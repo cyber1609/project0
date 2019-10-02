@@ -90,3 +90,9 @@ main {
   text-align: center;
   font-size: 22px;
 }
+td {
+  vertical-align: top;
+  border: solid black;
+  padding: 10px;
+  
+}
