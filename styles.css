@@ -120,6 +120,7 @@ td {
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
+  margin-top: 10px;
   display: block;
   height: 90%;
   width: auto;
@@ -160,7 +161,7 @@ td {
 .close {
   position: absolute;
   top: 5px;
-  right: 25px;
+  right: 15px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
