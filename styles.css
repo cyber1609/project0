@@ -60,7 +60,7 @@ nav a:hover {
 
 
 /* Add a hover effect (blue shadow) */
-.col-4:hover {
+[class*="col-"]:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
@@ -85,10 +85,7 @@ main {
 
   margin-top: 30px;
 }
-.home-about {
-  text-align: center;
-  font-size: 22px;
-}
+
 table {
   margin-left:auto; 
   margin-right:auto;
@@ -98,27 +95,6 @@ td {
   vertical-align: top;
   border: solid black 2px;
   padding: 10px;
-}
-
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
 }
 
 .photos {
@@ -145,8 +121,8 @@ td {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  height: 90%;
+  width: auto;
 }
 
 /* Caption of Modal Image */
@@ -201,5 +177,6 @@ td {
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
+    height: auto;
   }
 }

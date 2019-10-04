@@ -24,55 +24,42 @@
                 <a href="contacts.html"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
             </nav><!-- #site-navigation -->
         </header>
-        <main class="photos">
+        <main class="container">
             <div class="row">
-                <div class="col-4">
-                    
-                        <img src="img/fam1.jpg" alt="My family" class="photos">
-                    
+                <div class="col-4">                    
+                        <img src="img/fam1.jpg" alt="My family" class="photos">                    
                 </div>
-                <div class="col-4">
-                    
-                        <img src="img/fam2.jpg" alt="My family" class="photos">
-                    
+                <div class="col-4">                    
+                        <img src="img/fam2.jpg" alt="My family" class="photos">                    
                 </div>
-                <div class="col-4">
-                    <a target="_blank" href="img/fam3.jpg">
+                <div class="col-4">                    
                         <img src="img/fam3.jpg" alt="My family" class="photos">
-                    </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <a target="_blank" href="img/fum1.jpg">
+                <div class="col-4">                    
                         <img src="img/fum1.jpg" alt="My cat" class="photos">
-                    </a>
                 </div>
-                <div class="col-4">
-                    <a target="_blank" href="img/fum2.jpg">
-                        <img src="img/fum2.jpg" alt="My cat" class="photos">
-                    </a>
+                <div class="col-4">                   
+                        <img src="img/fum2.jpg" alt="My cat" class="photos">                 
                 </div>
-                <div class="col-4">
-                    <a target="_blank" href="img/fum3.jpg">
-                        <img src="img/fum3.jpg" alt="My cat" class="photos">
-                    </a>
+                <div class="col-4">                   
+                        <img src="img/fum3.jpg" alt="My cat" class="photos">                   
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <a target="_blank" href="img/fum4.jpg">
-                        <img src="img/fum4.jpg" alt="My cat" class="photos">
-                    </a>
+                <div class="col-4">                   
+                        <img src="img/fum4.jpg" alt="My cat" class="photos">                  
                 </div>
             </div>
 
 
-            <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-            </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
 
 <script>
 // Get the modal
@@ -90,12 +77,19 @@ $('.photos').click(function(){
 });
 
 // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        modal.style.display = "none";
+    }
+};
 </script>
 
         </main>
