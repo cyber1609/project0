@@ -26,44 +26,30 @@
         </header>
         <main class="photos">
             <div class="row">
-                <div class="col-4">
-                    
-                        <img src="img/fam1.jpg" alt="My family" class="photos">
-                    
+                <div class="col-4">                    
+                        <img src="img/fam1.jpg" alt="My family" class="photos">                    
+                </div>
+                <div class="col-4">                    
+                        <img src="img/fam2.jpg" alt="My family" class="photos">                    
                 </div>
                 <div class="col-4">
-                    
-                        <img src="img/fam2.jpg" alt="My family" class="photos">
-                    
-                </div>
-                <div class="col-4">
-                    <a target="_blank" href="img/fam3.jpg">
                         <img src="img/fam3.jpg" alt="My family" class="photos">
-                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-4">
-                    <a target="_blank" href="img/fum1.jpg">
                         <img src="img/fum1.jpg" alt="My cat" class="photos">
-                    </a>
                 </div>
                 <div class="col-4">
-                    <a target="_blank" href="img/fum2.jpg">
                         <img src="img/fum2.jpg" alt="My cat" class="photos">
-                    </a>
                 </div>
-                <div class="col-4">
-                    <a target="_blank" href="img/fum3.jpg">
+                <div class="col-4">                 
                         <img src="img/fum3.jpg" alt="My cat" class="photos">
-                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-4">
-                    <a target="_blank" href="img/fum4.jpg">
                         <img src="img/fum4.jpg" alt="My cat" class="photos">
-                    </a>
                 </div>
             </div>
 
@@ -80,7 +66,7 @@ var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = $('.photos');
-var modalImg =  $('#img01');;
+var modalImg =  $('#img01');
 var captionText = document.getElementById("caption");
 $('.photos').click(function(){
     modal.style.display = "block";
