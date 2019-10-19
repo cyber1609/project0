@@ -1,35 +1,20 @@
-.main-navigation {
-	border-bottom: 4px double #e1e1e1;
-	border-top: 4px double #e1e1e1;
-	clear: both;
-	display: block;
-	margin-top: 30px;
-	padding: 5px 0;
-	text-align: center;
-	width: 100%;
-}
-
-.header-image {
-	margin-top: 20px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: auto;
-}
-
-.main-navigation {
-  background-color: #333;
-  overflow: hidden;
-  display: block;
+table, .header-image, .main-navigation {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  text-align: center;
-
 }
 
-/* Style the links inside the navigation bar */
+.main-navigation {
+  border-bottom: 4px double #e1e1e1;
+  border-top: 4px double #e1e1e1;
+  clear: both;
+  display: block;
+  margin-top: 30px;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+}
 .main-navigation a {
   float: left;
   display: block;
@@ -39,6 +24,17 @@
   text-decoration: none;
   font-size: 25px;
 }
+.main-navigation a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.header-image {
+  margin-top: 20px;
+  display: block;
+  width: 70%;
+  height: auto;
+}
 
 /* Change the color of links on hover */
 nav a:hover {
@@ -46,27 +42,16 @@ nav a:hover {
   color: black;
 }
 
-/* Add an active class to highlight the current page */
-.main-navigation a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.main-navigation .icon {
-  display: none;
-}
-
-
-
 /* Add a hover effect (blue shadow) */
-[class*="col-"]:hover {
+[class*=col-]:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-[class*="col-"] {
-  border: 1px solid #ddd; /* Gray border */
-  border-radius: 4px;  /* Rounded border */
+[class*=col-] {
+  border: 1px solid #ddd;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded border */
   float: left;
   padding: 5px;
 }
@@ -81,14 +66,14 @@ nav a:hover {
 #resume {
   margin-top: 30px;
 }
-main {
 
+main {
   margin-top: 30px;
 }
 
 table {
-  margin-left:auto; 
-  margin-right:auto;
+  font: 100% Helvetica, sans-serif;
+  color: #333;
 }
 
 td {
@@ -99,22 +84,27 @@ td {
 
 .photos {
   cursor: pointer;
-  width: 100%
+  width: 100%;
 }
-
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 50px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 50px;
+  /* Location of the box */
   left: 0;
   top: 0;
-
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -124,7 +114,6 @@ td {
   display: block;
   height: 90%;
   width: auto;
-
 }
 
 /* Caption of Modal Image */
@@ -140,7 +129,7 @@ td {
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -148,15 +137,21 @@ td {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
-
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
-
 /* The Close Button */
 .close {
   position: absolute;
@@ -176,9 +171,11 @@ td {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 95%;
     height: auto;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
